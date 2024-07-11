@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+* {
+  color: #ffffff;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .bgCustomFirstPage {
+    background-image: url("/img/bgClouds.png"), url("/img/bgMountains.png");
+    background-position:
+            center top,
+            center bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, contain;
+  }
+}
